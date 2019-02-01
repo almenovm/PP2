@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace task2
 {
-    class Student
+    class Student //creating new class with parameters
     {
-        public string name;
-        public string ID;
-        public int year;
+        public string name; //first string parametere
+        public string ID; //second
+        public int year; //third
 
         public Student(string name, string ID, int year)
         {
@@ -18,7 +18,7 @@ namespace task2
             this.ID = ID;
             this.year = year;
         }
-        public void Print()
+        public void Print() //new function for displaying on console three parameters
         {
             Console.WriteLine(name + " " + ID + " " + year);
         }
@@ -28,11 +28,11 @@ namespace task2
 
         public static void Main(string[] args)
         {
-            Student st1 = new Student("Madiyar", "18BD110159", 2018);
-            while (st1.year < 2022)
+            Student st1 = new Student("Madiyar", "18BD110159", 2018); //creating variable in new type of data called "Student"
+            while (st1.year < 2022) //loop which adding 1 year before reaching 2022
             {
-                st1.year++;
-                st1.Print();
+                st1.year++;//adding 1 year every cycle turn
+                st1.Print();//displaying st1 all parameters
             }
             Console.ReadKey();
 

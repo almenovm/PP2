@@ -11,18 +11,18 @@ namespace task4
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int[,] arr = new int[n, n];
-            for (int i = 0; i < n; i++)
+            int n = int.Parse(Console.ReadLine());//input of "n" variable which is the lenght of 2D array of integers
+            int[,] arr = new int[n, n]; //creating 2D array of integers with length "n*n"
+            for (int i = 0; i < n; i++) //double loop for displaying 2D array on console
             {
                 for (int j = 0; j < n; j++)
                 {
                     if (i >= j)
-                        Console.Write("[*]");
+                        Console.Write("[*]"); //elements of 2D array
 
 
                 }
-                Console.WriteLine();
+                Console.WriteLine();//analoge of endl for makin space after every row
             }
             Console.ReadKey();
 
