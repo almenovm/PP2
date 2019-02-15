@@ -59,7 +59,6 @@ namespace task1
             
             int pos = 1;
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(path);
             foreach(FileSystemInfo fs in fileSystemInfos)
             {
                 if(ok && fs.Name.StartsWith("."))
