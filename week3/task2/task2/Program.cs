@@ -185,9 +185,11 @@ namespace task2
                     }
                     else
                     {
-                        StreamWriter sw = new StreamWriter(fs.FullName);
-                        sw.Write(Console.ReadLine());
-                        sw.Close();
+                        StreamReader sr = new StreamReader(fs.FullName);
+                        Console.WriteLine(sr.ReadToEnd());
+                        sr.Close();
+                        Console.ReadKey();
+                        Console.Clear();
                     }
 
                 }
